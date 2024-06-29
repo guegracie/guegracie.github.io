@@ -1,0 +1,85 @@
+#projects {
+    margin: auto;
+    padding-top: 100px;
+    max-width: 1000px;
+    min-height: 50vh;
+}
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 0;
+  }
+  @media (max-width: 1080px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  .projects-card {
+    position: relative;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    background-color: white;
+    border-radius: 16px;
+  }
+  
+  .projects-card:hover {
+    transform: translateY(-10px);
+    background-color: white;
+  }
+  
+  .card-header {
+    margin-top: -20px;
+    display: flex;
+    padding: 1.25em 0 !important;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none !important;
+  }
+  .folder-icon {
+    color: var(--custom-text-color);
+  }
+  
+  .github-icon {
+    margin-top: 6px;
+  }
+
+  .github-icon:hover {
+    color: black !important;
+  }
+  
+  .card-title {
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-desc {
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .card-tech {
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 16px;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    #projects {
+      height: unset;
+      padding-left: unset;
+      padding-right: unset;
+    }
+  }

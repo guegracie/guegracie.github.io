@@ -1,0 +1,40 @@
+.navbar {
+    background-color: var(--lightest-slate);
+    color: var(custom-text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand {
+    color: var(--custom-text-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.navbar .me-auto {
+    color: var(--custom-text-color) !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .ml-auto {
+    color: var(--custom-text-color) !important;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar .me-auto:hover, .ml-auto:hover {
+    color: black !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar .navbar-brand  {
+        display: none;
+    }
+  
+    .navbar .navbar-links .navbar-socials {
+        display: none;
+      }
+}

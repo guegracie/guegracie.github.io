@@ -1,10 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --lightest-slate: #FDF6FD;
+  --custom-text-color: #E58CE5;
+  --highlight-color: #FFFFCC;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--lightest-slate);
+}
+
+body {
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
 .App {
-  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: var(--lightest-slate);
+  display: flex;
+  margin: auto;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+a{
+  text-decoration: none !important;
+  color: var(--custom-text-color) !important;
+}
+
+#content{
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden; 
+}
+
+.rs-steps-horizontal .rs-steps-item-content {
+  text-align: left; 
+}
+
+::selection {
+  background: var(--highlight-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,25 +55,59 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.section-header {
+  display: flex;
+  padding-bottom: 42px;
+  width: 100vw;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  width: 300px;
+  margin-top: 39px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--lightest-slate);
+}
+
+.section-title {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+    padding: 40px 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #content {
+    padding: 10px 10px;
+    width: 100%
+  }
+
+  .section-header{
+    width: unset;
+  }
+
+  .section-header::after {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 32px;
   }
 }
