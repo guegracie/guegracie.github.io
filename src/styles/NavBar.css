@@ -24,8 +24,12 @@
     justify-content: space-between;
 
 }
+.navbar .me-auto a, .navbar .ml-auto a {
+    color: var(--custom-text-color) !important;
+    text-decoration: none;
+}
 
-.navbar .me-auto:hover, .ml-auto:hover {
+.navbar .me-auto a:hover, .navbar .ml-auto a:hover {
     color: black !important;
 }
 
