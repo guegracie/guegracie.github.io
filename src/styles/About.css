@@ -72,9 +72,7 @@
   @media only screen and (max-width: 600px) {
     #about {
       height: unset;
-      padding-left: unset;
-      padding-right: unset;
-      padding-top: 30%;
+      padding: 30% 10px;
     }
   
     .about-description {
@@ -88,10 +86,10 @@
     }
   
     .about-image img {
-      display: none;
+      max-width: 100%;
     }
   
     .about-content {
-      display: unset;
+      flex-direction: column;
     }
   }

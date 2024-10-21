@@ -7,6 +7,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import "../styles/NavBar.css";
 
+const handleClick = (event) => {
+    event.preventDefault(); // Prevent default behavior
+    window.open("/assets/GracieGuevaraResume.pdf", "_blank"); // Open the PDF in a new tab
+  };
+
 function NavBar() {
     return (
         <Navbar fixed="top" className="navbar" expand="lg">
@@ -18,6 +23,7 @@ function NavBar() {
                         <Nav.Link href="#intro">Home</Nav.Link>
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link onClick={handleClick}>Resume</Nav.Link>
                      </Nav>
                      <Nav className="ml-auto">
                         <Nav.Link href="mailto:gracielaguev7@gmail.com"><EmailIcon /></Nav.Link>
