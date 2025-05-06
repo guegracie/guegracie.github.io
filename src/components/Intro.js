@@ -30,7 +30,10 @@ const Intro = () =>{
                 </div>
                 <span ref={el} className="intro-title"></span>
                 <div className='intro-subtitle'>i try to create things sometimes.</div>
-                <div className='intro-desc'>I'm deeply interested in product management, cloud computing, artificial intelligence, data analysis, and machine learning. I’m constantly seeking ways to expand my skills and contribute to innovative projects.</div>
+                <div className='intro-desc'> I’m passionate about technology and driven to grow across multiple domains, 
+                    with a strong interest in contributing to mission-driven, collaborative teams. Whether through coding, problem-solving, or cross-functional teamwork, I'm eager to bring value to 
+                    innovative projects while continuing to expand my technical and professional skill set.
+                </div>
                 <a
                     href="mailto:gracielaguev7@gmail.com"
                     className='intro-contact'

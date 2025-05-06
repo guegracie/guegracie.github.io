@@ -1,0 +1,43 @@
+#certifications {
+    margin: auto;
+    padding-top: 100px;
+    max-width: 1000px;
+    min-height: 50vh;
+}
+
+.certification-title {
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 36px;
+    font-weight: semibold;
+    margin-bottom: 20px;
+}
+
+.certification-desc {
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #certifications {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .certification-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .certification-title {
+        font-size: 28px;
+    }
+
+    .certification-desc {
+        font-size: 16px;
+    }
+}

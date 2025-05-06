@@ -5,25 +5,32 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I’m currently a senior in <b>Computer Science</b> at{" "}
-        <a href="https://www.utrgv.edu/">UTRGV</a>. My time as an active member
-        of <a href="https://fronteradevs.com">Frontera Devs</a> has allowed me
-        to assist young students in starting their academic journey in tech.
+        I recently graduated with a Bachelor's degree in <b>Computer Science</b> from {" "}
+        <a href="https://www.utrgv.edu/">UTRGV</a>. During my time there, I had the opportunity to be an active member
+        of <a href="https://fronteradevs.com">Frontera Devs</a>, where I mentored and assisted students beginning their journey into tech.
       </p>
     );
 
     const two = (
       <p>
-        When I’m not studying, I like to go to the gym and listen to music. I
-        also watch a lot of movies and keep up with Formula 1.
+      I'm now CompTIA Security+ (SY0-701) certfied and excited to apply my skills in cybersecurity. I'm actively seeking hands-on experience
+      in cybersecurity where I can apply my Security+ certification and software development skills and deepen my knowledge
+      of threat detection, incident response, and secure system design.
+    </p>
+    );
+
+    const three = (
+      <p>
+        Outside of tech, you'll ususally find me at the gym, listening to music,
+        watching movies, or keeping up with the latest in Formula 1.
       </p>
     );
 
     const tech_stack = [
-      "Python",
-      "Java",
+      "JavaScript",
       "React.js",
-      "C++",
+      "Python", 
+      "C++"
     ];
 
     return (
@@ -34,16 +41,17 @@ class About extends React.Component {
         <div className="about-content">
           <div className="about-description">
             {one}
+            {two}
             <p>Some languages I've been working with:</p>
             <ul className="tech-stack">
               {tech_stack.map((tech_item, i) => (
                 <li key={i}>{tech_item}</li>
               ))}
             </ul>
-            {two}
+            {three}
           </div>
           <div className="about-image">
-            <img src={"/assets/mee2.JPG"} alt="Gracie Guevara" />
+            <img src={"/assets/meAtSWE.jpg"} alt="Gracie Guevara" />
           </div>
         </div>
       </div>
