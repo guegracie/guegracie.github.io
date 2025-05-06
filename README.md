@@ -1,7 +1,7 @@
 # guegracie-website.com v1
 
 My first website built using React.Js.
-gracieguev.com
+(www.gracieguev.com)
 
 ## set up 💻
 install all dependencies 
