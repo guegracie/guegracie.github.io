@@ -8,7 +8,7 @@
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 0;
   }
   @media (max-width: 1080px) {
@@ -27,6 +27,7 @@
     padding: 2rem 1.75rem;
     background-color: white;
     border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .projects-card:hover {

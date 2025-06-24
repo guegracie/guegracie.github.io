@@ -28,8 +28,8 @@ function NavBar() {
                      </Nav>
                      <Nav className="ml-auto">
                         <Nav.Link href="mailto:gracielaguev7@gmail.com"><EmailIcon /></Nav.Link>
-                        <Nav.Link href="https://github.com/guegracie"><GitHubIcon /></Nav.Link>
-                        <Nav.Link href="https://www.linkedin.com/in/gracie-guevara-b79b7a133"><LinkedInIcon /></Nav.Link>
+                        <Nav.Link href="https://github.com/guegracie" target="_blank" rel="noopener noreferrer"><GitHubIcon /></Nav.Link>
+                        <Nav.Link href="https://www.linkedin.com/in/gracie-guevara-b79b7a133" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
