@@ -4,5 +4,13 @@
     --custom-text-color: #E58CE5;
     --highlight-color: #FFFFCC;
     --text-color: black;
+    --background-color: #fdf6fd;
 
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--lightest-slate);
+    margin: 0;
+    padding: 0;
 }

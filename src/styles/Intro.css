@@ -1,20 +1,45 @@
 #intro {
-    display: auto;
+    margin: auto;
+    background-color: var(--lightest-slate);
+    width: 100%;
+    min-height: 100vh; 
+    padding-top: 200px;
+    overflow-x:  hidden; 
+    display: flex;
     flex-direction: column;
-    align-items: center;    
-    text-align: center;
-    margin: auto;   
+    justify-content: center;  
+    
+}
+
+.intro-container {
+    margin: auto;
     max-width: 1000px;
-    padding-top: 200px; 
-    min-height: 100vh;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 16px;
+
+}
+
+.intro-typed-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
 }
 
 .intro-title {
+    display: inline-block;
     font-family: "Inter", sans-serif;
     color: black;
     font-size: 76px;
     font-weight: semibold;
     line-height: 1.1;
+    background-color: var(--lightest-slate);
+    white-space: nowrap;
 }
 
 .intro-name {
@@ -22,7 +47,7 @@
     color: var(--custom-text-color);
     font-size: 76px;
     font-weight: semibold;
-    line-height: 1.1;
+    line-height: 1.1;    
 }
 
 .intro-subtitle {
@@ -31,7 +56,7 @@
     font-size: 48px;
     font-weight: 500;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -10px;    
 }
 
 .intro-desc {
@@ -65,6 +90,7 @@
     opacity: 1;
     font-size: 70px;
     color: var(--custom-text-color);
+    vertical-align: baseline;
     align-self: flex-end;
     padding-left: 5px;
 }
@@ -81,11 +107,20 @@ b {
 
 @media only screen and (max-width: 600px) {
     #intro {
+      background-color: var(--lightest-slate);
       min-height: unset;
-      padding-left: unset;
-      padding-top: unset;
-      margin: 0;
+      padding-left: unset;  
+      padding-top: unset; 
+      margin: 0; 
       align-items: center;
+    
+    }
+
+    .intro-container {
+      display: flex;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 16px;
     }
   
     .intro-title {

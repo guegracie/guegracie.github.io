@@ -8,6 +8,12 @@ class Projects extends React.Component {
   render() {
 
     const projects = {
+      "VanHelsing Ransomware Detection Lab": {
+        desc: "An educational anomaly detection project simulating VanHelsing Ransomware behavior in a Windows environment. I trained an Isolation Forest machine learning model to identify suspicious activity in logs and automated secure log uploads to Azure Blob Storage. This project combines ransomware simulation, cloud integration, and Python-based detection pipelines.",
+        techStack: "Python, Azure Blob Storage, Isolation Forest",
+        link: "https://github.com/guegracie/Anomaly_Detection_Lab_using_Isolation_Forest_and_Azure-",
+        mediumLink: "https://medium.com/@gracielaguev7/building-an-anomaly-detection-lab-for-cybersecurity-logs-using-isolation-forest-azure-92b3ef4486e0"
+      },
       "Automated Threat Detection & Response Workflow": {
         desc: "Designed and implemented a Security Orchestration, Automation, and Response (SOAR) workflow using LimaCharlie, Tines, Slack, and email notifications to detect LaZagne on an endpoint.",
         techStack: "LimaCharlie, Tines, Slack, Email",
@@ -45,9 +51,9 @@ class Projects extends React.Component {
                <p> {projects[key]["desc"]} </p>
                 {projects[key]["mediumLink"] && (
                   <p> 
-                      <strong>Medium Article:</strong>{" "}
+                      <strong>Read the full case study on Medium:</strong>{" "}
                       <a href={projects[key]["mediumLink"]} target="_blank" rel="noopener noreferrer">
-                        Read on Medium
+                        {key}
                       </a>
                   </p>
                   )}

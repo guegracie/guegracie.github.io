@@ -25,10 +25,13 @@ const Intro = () =>{
         }, []);
         return (
             <div id="intro">
+                <div className='intro-container'>
                 <div>
                 <img src={"/assets/blue-heart2.gif"} alt="blueheart" className="intro-img" />
                 </div>
+                <div className='intro-typed-wrapper'>
                 <span ref={el} className="intro-title"></span>
+                </div>
                 <div className='intro-subtitle'>i try to create things sometimes.</div>
                 <div className='intro-desc'> I’m passionate about technology and driven to grow across multiple domains, 
                     with a strong interest in contributing to mission-driven, collaborative teams. Whether through coding, problem-solving, or cross-functional teamwork, I'm eager to bring value to 
@@ -41,6 +44,7 @@ const Intro = () =>{
                     <MailOutlineIcon style={{ fontSize: 30,}} />
                     {" Say hi! "}
                 </a>
+                </div>
             </div>
         );
 }

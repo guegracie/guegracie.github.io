@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Intro from './components/Intro';
 import About from './components/About';
@@ -10,17 +11,22 @@ import 'rsuite/styles/index.less';
 
 function App() {
   return (
-    <div className="App">  
-      <NavBar />
-      <div id="content">
-      <Intro />
-      <About />
-      <Certifications />
-      <Projects />
-      </div>
-      </div>
-  
-  
+  <Router>
+    <NavBar />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Intro />
+            <About />
+            <Certifications />
+            <Projects />
+          </>
+        }
+        />
+    </Routes>
+    </Router>
   );
 }
 

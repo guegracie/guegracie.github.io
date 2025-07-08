@@ -3,6 +3,7 @@
     margin: auto;
     max-width: 1000px;
     padding-top: 100px;
+    background-color: var(--lightest-slate);
   }
   
   .about-description ul {
@@ -29,6 +30,7 @@
   .about-content {
     display: flex;
     flex-direction: row;
+    background-color: var(--lightest-slate);
   }
   
   .about-description {
@@ -71,8 +73,10 @@
   
   @media only screen and (max-width: 600px) {
     #about {
+      background-color: var(--lightest-slate);
       height: unset;
       padding: 30% 10px;
+      
     }
   
     .about-description {
@@ -90,6 +94,7 @@
     }
   
     .about-content {
+      background-color: var(--lightest-slate);
       flex-direction: column;
     }
   }
