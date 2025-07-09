@@ -11,7 +11,7 @@ import "../styles/NavBar.css";
 
 const handleClick = (event) => {
     event.preventDefault(); // Prevent default behavior
-    window.open("/assets/GracieGuevaraResume.pdf", "_blank"); // Open the PDF in a new tab
+    window.open("/assets/Gracie_Guevara_General_Resume.pdf", "_blank"); // Open the PDF in a new tab
   };
 
 function NavBar() {
