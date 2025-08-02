@@ -12,10 +12,10 @@ const Intro = () =>{
    const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 6000,
     slidesToShow: 1,
     slidesToScroll: 1
     };
@@ -34,7 +34,7 @@ return (
                     </div>
                     <div className="carousel-slide">
                         <div className="carousel-overlay"></div>
-                        <div><img src="/assets/mee3.jpg" alt="me in chi" className="carousel-image" /></div>      
+                        <div><img src="/assets/mee3.JPG" alt="me in chi" className="carousel-image" /></div>      
                     </div>
                 </Slider>   
                    <div className="intro-text-overlay">
