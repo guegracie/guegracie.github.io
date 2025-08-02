@@ -1,44 +1,108 @@
 .navbar {
-    background-color: var(--lightest-slate);
-    color: var(custom-text-color);
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    transition: background-color 0.3s ease;;
 }
 
-.navbar .navbar-brand {
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-toggle {
+    display: inline-flex; 
+    align-items: center;
+    gap: 6px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu {
+    position: absolute; 
+    top: 100%;
+    right: 0; 
+    background-color: inherit;
+    color: inherit;
+    padding: 8px 0;
+    z-index: 999;
+    min-width: 160px;
+    transition: all 0.2s ease;
+}
+
+.dropdown-content {
+   background-color: inherit;
+   color: inherit;
+}
+
+.dropdown-item {
+  color: inherit;
+  padding: 10px 16px; 
+  text-decoration: none; 
+  display: block; 
+}
+
+.navbar-pink .dropdown-menu,
+.navbar-pink .dropdown-content,
+.navbar-pink .dropdown-item {
     color: var(--custom-text-color);
-    font-size: 24px;
-    font-weight: bold;
+    background-color: var(--lightest-slate);
 }
 
-
-.navbar .me-auto {
-    color: var(--custom-text-color) !important;
+.navbar-black .dropdown-menu,
+.navbar-black .dropdown-content,
+.navbar-black .dropdown-item {
+    color: white;
+    background-color: black;
+}
+.navbar-black {
+    background-color: black !important;
+}
+.navbar-black .navbar-brand, 
+.navbar-black .me-auto,
+.navbar-black .ml-auto,
+.navbar-black .me-auto a,
+.navbar-black .ml-auto a {
+    color: white !important;
     display: flex;
     justify-content: space-between;
-}
-
-.navbar .ml-auto {
-    color: var(--custom-text-color) !important;
-    display: flex;
-    justify-content: space-between;
-
-}
-.navbar .me-auto a, .navbar .ml-auto a {
-    color: var(--custom-text-color) !important;
     text-decoration: none;
 }
 
-.navbar .me-auto a:hover, .navbar .ml-auto a:hover {
-    color: black !important;
+.navbar-pink {
+    background-color: var(--lightest-slate) !important;
+}
+
+.navbar-pink .navbar-brand,
+.navbar-pink .me-auto,
+.navbar-pink .ml-auto, 
+.navbar-pink .me-auto a,
+.navbar-pink .ml-auto a {
+    color: var(--custom-text-color) !important;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navbar-pink .me-auto a:hover,
+.navbar-pink .ml-auto a:hover {
+  color: black !important; 
+}
+
+.navbar-black .me-auto a:hover,
+.navbar-black .ml-auto a:hover {
+  color: rgb(27, 209, 88) !important;
+}
+
+.navbar-black .dropdown-item:hover {
+  background-color: #222; /* or dark grey */
+}
+
+.navbar-pink .dropdown-item:hover {
+  background-color: #ffe0f0; /* a lighter pink */
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar .navbar-brand  {
-        display: none;
-    }
-  
-    .navbar .navbar-links .navbar-socials {
-        display: none;
-      }
+   .navbar .navbar-brand,
+   .navbar .navbar-links .navbar-socials {
+    display: none;
+  }
 }

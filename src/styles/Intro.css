@@ -1,54 +1,144 @@
-#intro {
-    margin: auto;
-    background-color: var(--lightest-slate);
-    width: 100%;
-    min-height: 100vh; 
-    padding-top: 200px;
-    overflow-x:  hidden; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    
-}
+ #intro{
+  background-color: var(--lightest-slate);
+  overflow-x: hidden;
+  padding: 100px 1.5rem;
+  padding-bottom: 20px;
+  flex: 1;
+  display: flex; 
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+ }
 
 .intro-container {
-    margin: auto;
-    max-width: 1000px;
+    margin: 0;
+    max-width: 750px;
     width: 100%; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0 16px;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 0 auto;
 
 }
 
-.intro-typed-wrapper {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+.intro-header {
+  position: relative; /* Makes this the positioning context for absolute children */
+  width: 100%;
+  text-align: center;
+}
 
+
+.intro-name {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.1;   
 }
 
 .intro-title {
-    display: inline-block;
-    font-family: "Inter", sans-serif;
-    color: black;
-    font-size: 76px;
-    font-weight: semibold;
-    line-height: 1.1;
-    background-color: var(--lightest-slate);
-    white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: semibold;
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  color: white;
 }
 
-.intro-name {
-    font-family: "Inter", sans-serif;
-    color: var(--custom-text-color);
-    font-size: 76px;
-    font-weight: semibold;
-    line-height: 1.1;    
+.intro-desc {
+    font-size: 20px;
+    color: white;
+    line-height: 1.1;
+    font-weight: normal;
+    width: 40%;
 }
+.intro-text-overlay {
+  position: absolute;
+  top: 40%; /* Center vertically */
+  left: 7%; /* Center horizontally */
+  transform: translateY(-30%); /* Precise centering */
+  text-align: left;
+  color: white; /* Or your preferred text color */
+  width: 100%;
+  z-index: 2; /* Ensures text appears above image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 5; /* Higher than images and default slick items */
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center;
+  min-height: 300px;
+}
+
+.slick-slide {
+ padding: 0 10px; 
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-arrow,
+.slick-dots {
+  display: none !important;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto; 
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 60px;
+
+}
+.carousel-slide {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  z-index: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
 
 .intro-subtitle {
     font-family: "Inter", sans-serif;
@@ -59,47 +149,6 @@
     margin-top: -10px;    
 }
 
-.intro-desc {
-    font-family: "Inter", sans-serif;
-    color: black;
-    font-size: 24px;
-    align-self: center;
-    text-align: center;
-    max-width: auto;   
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
-
-.intro-contact{
-    font-size: 22px;
-    font-weight: bolder;
-    font-family: "Inter", sans-serif;
-    align-self: center;
-    justify-content: space-evenly;
-    padding: 10px 30px;
-    cursor: pointer;
-    border: 1px solid var(--custom-text-color);
-    border-radius: 4px;
-}
-
-.intro-contact:hover {
-    background-color: white;
-}
-
-.typed-cursor {
-    opacity: 1;
-    font-size: 70px;
-    color: var(--custom-text-color);
-    vertical-align: baseline;
-    align-self: flex-end;
-    padding-left: 5px;
-}
-
-.intro-img {
-    width: 250px !important;
-    height: 100% !important;
-    padding-bottom: 20px;
-}
 
 b {
     font-size: 17px;
@@ -114,6 +163,10 @@ b {
       margin: 0; 
       align-items: center;
     
+    }
+
+    .intro-text-overlay{
+
     }
 
     .intro-container {
@@ -144,5 +197,16 @@ b {
     .intro-contact {
       font-size: 16px;
     }
-  }
+  
+    .overlay {
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 5px;
+    }
+
+    .carousel-container {
+    height: auto;
+    padding-bottom: 30px;
+    }
+}
 

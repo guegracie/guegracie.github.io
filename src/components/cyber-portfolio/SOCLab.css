@@ -1,0 +1,219 @@
+#soc-lab {
+  padding-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x:  hidden; 
+  font-family: "Inter", sans-serif;
+  background-color: black; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: white; 
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+.soc-content{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding: 0 10px; 
+}
+
+.soc-content ul {
+   padding-left: 0;
+   align-items: center;
+   margin: auto; 
+}
+
+.soc-content li {
+  list-style-position: inside;
+  margin: 0 auto; 
+  padding-left: 1.2rem; 
+  max-width: 700px;
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.soc-title h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(27, 209, 88);
+}
+
+.soc-subtitle h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(27, 209, 88);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.soc-subtitle h3 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(27, 209, 88);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.soc-subtitle p {
+  align-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.soc-subtitle li {
+  list-style-position: inside;
+  margin: 0 auto; 
+  padding-left: 1.2rem; 
+  max-width: 800px;
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.soc-subtitle ul {
+  padding-left: 0;
+  align-items: center;
+}
+
+.pinned-list {
+  list-style: none;
+  padding-left: 0;
+  margin: auto; 
+  display: inline-block;
+  max-width: 700px; 
+  text-align: left;
+}
+
+.pinned-list ul {
+  align-items: center;
+  padding-left: 0;
+  text-align: left;
+}
+
+.pinned-list li {
+  position: relative;
+  margin: auto;
+  font-size: 22px; 
+  font-weight: 700;;
+  line-height: 1.6;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  max-width: 700px;
+}
+
+.pinned-list li::before {
+  content: "📌";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Images */
+.soc-diagram,
+.soc-attack-image,
+.soc-event-image,
+.soc-wazuh-logs-image,
+.soc-shuffle-results-gif,
+.soc-shuffle-email-image,
+.soc-thehive-case-image,
+.soc-wazuh-rule-image,
+.soc-wazuh-detected-image{
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.soc-attack-desc {
+  text-align: center;
+  font-size: 18px;
+  color: white;;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.toggle-section {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 100%;
+
+}
+
+.toggle-section summary {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(27, 209, 88);
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: black;
+  
+} 
+.toggle-section summary:hover {
+  color: white; 
+}
+
+.toggle-section img {
+  display: block;
+  max-width: 100%;
+  height:auto; 
+}
+@media only screen and (max-width: 600px) {
+  .at-home-soc-lab {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+ .soc-title h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .soc-subtitle h2,
+  .soc-subtitle h3,
+  .soc-subtitle p,
+  .soc-subtitle li {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .soc-diagram,
+  .soc-attack-image,
+  .soc-event-image,
+  .soc-wazuh-logs-image,
+  .soc-shuffle-results-gif,
+  .soc-shuffle-email-image,
+  .soc-thehive-case-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .soc-attack-desc {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}

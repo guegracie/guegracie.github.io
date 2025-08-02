@@ -3,6 +3,7 @@
     padding-top: 100px;
     max-width: 1000px;
     min-height: 50vh;
+    padding-bottom: 40px;
 }
   
   .projects-grid {
@@ -76,6 +77,13 @@
     font-size: 16px;
   }
   
+  .view-project-link {
+    font-family: "Inter", sans-serif;
+    color: var(--custom-text-color);
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: auto;
+  }
   
   @media only screen and (max-width: 600px) {
     #projects {

@@ -2,12 +2,19 @@ import React from "react";
 import "../styles/Projects.css";
 import ExternalLinks from "./ExternalLinks";
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+import { Link } from "react-router-dom";
 
 class Projects extends React.Component {
 
   render() {
 
     const projects = {
+      "At Home SOC Lab": {
+        desc: "I built a home lab to simulate a real-world Security Operations Center (SOC) environment using Kali Linux and Windows VMs on Azure. The lab detects brute-force SMB attacks using Wazuh and simulates automated incident response via Shuffle SOAR, email, and custom rules.",
+        techStack: "Kali Linux, Windows, Azure, Wazuh, Shuffle SOAR, TheHive",
+        viewProject: "View Full Project",
+        cyberPortfolioLink: "/soc-lab",
+      },
       "VanHelsing Ransomware Detection Lab": {
         desc: "An educational anomaly detection project simulating VanHelsing Ransomware behavior in a Windows environment. I trained an Isolation Forest machine learning model to identify suspicious activity in logs and automated secure log uploads to Azure Blob Storage. This project combines ransomware simulation, cloud integration, and Python-based detection pipelines.",
         techStack: "Python, Azure Blob Storage, Isolation Forest",
@@ -57,6 +64,16 @@ class Projects extends React.Component {
                       </a>
                   </p>
                   )}
+                {projects[key]["cyberPortfolioLink"] && (
+                  <p> 
+                    <Link
+                      to={projects[key]["cyberPortfolioLink"]}
+                      className="view-project-link"
+                      >
+                      {projects[key]["viewProject"] || "View Full Project"}
+                    </Link>
+                  </p>
+                )}
               </div>
               <div className="card-tech">{projects[key]["techStack"]}</div>
             </li>
