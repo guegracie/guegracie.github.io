@@ -157,15 +157,12 @@ b {
       background-color: var(--lightest-slate);
       min-height: unset;
       padding-left: unset;  
-      padding-top: unset; 
+      padding-top: 200px; 
       margin: 0; 
       align-items: center;
     
     }
 
-    .intro-text-overlay{
-
-    }
 
     .intro-container {
       display: flex;

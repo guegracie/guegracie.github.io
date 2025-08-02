@@ -15,7 +15,7 @@ const Intro = () =>{
     speed: 1000,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1
     };
