@@ -4,10 +4,9 @@ import "./SOCLab.css";
 class SOCLab extends React.Component {
 render() {
 const one = (
-        <p> I built a hands-on Security Operations Center (SOC) lab using Windows and Kali Linux virtual machines to simulate and
-             detect real-world brute-force attacks. Using Wazuh for detection and Shuffle SOAR for automated response, 
-             this project demonstrates my ability to detect, triage, and respond to threats in a production-style environment. 
-            All components were deployed and integrated using Azure cloud infrastructure. </p>
+        <p> I built a hands-on Security Operations Center (SOC) lab using Windows and Kali Linux virtual machines to simulate
+             and detect brute-force attacks in a production-style environment. With Wazuh for detection and Shuffle SOAR 
+             for automated response, all components were deployed and integrated using Azure cloud infrastructure. </p>
     );
 
 const two = (
